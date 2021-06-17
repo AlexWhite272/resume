@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <script type="text/javascript">
+            $(document).ready(function(){
+             $('.window__asq').click(function(){
+              $(this).parent().children('.window__block').slideToggle();
+              return false;
+             });
+            });
+        </script>
+        <nav class="nav">
+            <div class="nav__logo">
+                <img class="nav__logo-img" src="img/WD.png" alt="Logo(WD)"> <!-- 85*38 -->
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__tittle">
+                    <li class="nav__item"><a data-goto="#header" href="#header" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link ">Об авторе</a>
+                        <span class="nav__arrow"></span>
+                        <ul class="nav__subtittle">
+                            <li class="nav__subitem">
+                                <a data-goto="#aboutme" href="#aboutme" class="nav__link">Инцформация</a>
+                            </li>
+                            <li class="nav__subitem">
+                                <a data-goto="#skills" href="#skills" class="nav__link">Скилы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a data-goto="#sendme" href="#sendme" class="nav__link">Обратная связь</a>
+                    </li>
+                    <li class="nav__item"><a data-goto="#footer" href="#footer" class="nav__link ">Контакты</a></li>
+                </ul>
+                <img src="img/cross_114275.png" alt="closed" class="nav__closed">
+                <img class="nav__open" src="img/burger_line_list_menu_nav_navigation_option_icon_123231.png" alt="Menu">
+            </div>
+        </nav>
+        <section id="header" class="name__job">
+            <img class="name-job__img" src="img/Frame.png" alt="Laptop">
+            <div class="name-job__info">
+                <div class="name-job__tittle">
+                    <h1>Frontend-разработчик</h1>
+                </div>
+                <div class="name-job__item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, minima nisi veritatis
+                        voluptatem consequatur quibusdam! Omnis rerum et corporis natus provident culpa officia odit
+                        nemo excepturi, facere optio harum saepe esse similique quaerat blanditiis repellendus aperiam
+                        alias!</p>
+                </div>
+                <button class="name-job__button">
+                    <a href="#" class="name-job__link"> Написать мне</a>
+                </button>
+            </div>
+        </section>
+    </header>
+    <section id="aboutme" class="about-me">
+        <h2 class='about-me__tittle'>Обо мне</h2>
+        <p class="about-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis id
+            architecto libero debitis, facere ex dolor aliquam veritatis, quae fuga? Inventore, sit distinctio? Possimus
+            exercitationem, harum neque quaerat magni blanditiis iste nihil obcaecati delectus? Libero ratione pariatur
+            voluptates numquam, nemo exercitationem adipisci placeat minima sapiente cumque saepe! Ipsam, numquam?</p>
+        <!-- <img src="/img/WD.png" alt="dw" class="about-me__img"> -->
+    </section>
+    <section class="skills">
+
+        <div class="skills__logo">
+            <img class="skills__img" src="img/css3-01_icon-icons.com_50918.png" alt="#" class="skills__img">
+            <img class="skills__img" src="img/social_html5_html_71(1).png" alt="#" class="skills__img">
+            <img class="skills__img" src="img/prog-js01_icon-icons.com_50789.png" alt="#" class="skills__img">
+            <img class="skills__img" src="img/react_logo_icon_144942.png" alt="#" class="skills__img">
+            <img class="skills__img" src="img/github_original_wordmark_logo_icon_146506.png" alt="#"
+                class="skills__img">
+        </div>
+        <div id="skills" class="skills__list-img">
+            <div class="skills__list">
+                <h2 class="skills__tittle">
+                    Мои Навыки
+                </h2>
+                <div class="skills__sublist">
+
+                    <h5 class="skills__list-tittle">HTML</h5>
+                    <div class="skills__html"><span class="skills__html-pol"></span></div>
+
+                    <h5 class="skills__list-tittle">CSS</h5>
+                    <div class="window">
+                        <div class="window__block">
+                            <ol>
+                                <li>Адаптивная верстка</li>
+                                <li>Анимация</li>
+                            </ol>
+                        </div>
+                        <img src="img/question-mark_icon-icons.com_69724.png" alt="?" class="window__asq">
+                        <div class="skills__css"><span class="skills__css-pol"></span></div>
+                    </div>
+                    <h5 class="skills__list-tittle">JS</h5>
+                    <div class="window">
+                        <div class="window__block">
+                            <ol>
+                                <li>Понимание принципов ООП</li>
+                                <li>DOM</li>
+                            </ol>
+                        </div>
+                        <img src="img/question-mark_icon-icons.com_69724.png" alt="?" class="window__asq">
+                        <div class="skills__js"><span class="skills__js-pol"></span></div>
+                    </div>
+                    <h5 class="skills__list-tittle">React</h5>
+                    <div class="window">
+                        
+                        <div class="window__block">
+                            <ol>
+                                <li>Я только начал обучение:) За прогрессом можно посмотреть на GitHub...</li>
+                            </ol>
+                        </div>
+                        <img src="img/question-mark_icon-icons.com_69724.png" alt="?" class="window__asq">
+                        <div class="skills__react"><span class="skills__react-pol"></span></div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/me1.png" alt="я мультяшка:)" class="skills__picture">
+        </div>
+    </section>
+    <section id="sendme" class="send-me">
+        <h2 class="send-me__tittle">Хотите веб-сайт?</h2>
+        <p class="send-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et quia quibusdam
+            recusandae vero fuga odit veniam itaque quidem culpa!</p>
+        <form class="send-me__form" action="">
+            <input type="name" placeholder="Ваше имя" required class="send-me__name">
+            <input type="email" placeholder="Ваш e-mail" required class="send-me__email">
+            <textarea name="text" placeholder="Ваши вопросы, ТЗ..." required id="" cols="30" rows="10"
+                class="send-me__textarea"></textarea>
+            <button class="send-me__button" type="submit">Отправить</button>
+        </form>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="footer__block">
+            <div>
+                <h3 class="footer__name">Кондаков Александр</h3>
+                <h6 class="footer__war">(с) 2021. Все права защищены.</h6>
+            </div>
+            <div class="footer__links">
+                <a href="" class="footer__link"><img src="img/github_logo_icon_147285.png" alt="GitHub"
+                        class="footer__img"></a>
+                <a href="" class="footer__link"><img src="img/social_media_logo_whatsapp_icon-icons.com_59066.png"
+                        alt="WhatsApp" class="footer__img"></a>
+                <a href="" class="footer__link"><img
+                        src="img/logo_telegram_airplane_air_plane_paper_airplane_icon_143169.png" alt="Telegram"
+                        class="footer__img"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/skript.js"></script>
+</body>
+
+</html>
