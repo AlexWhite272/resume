@@ -16,11 +16,7 @@
 // }else {
 //     document.body.classList.add ('_pc')
 // }
-$(document).ready(function(){
-    $('.window__block').hide();
-    $('.window__asq').click(function(){
-        $(this).next().toggle()});
-    });
+
 
 //узнаем ширину экрана и устанавливаем фон блока
 const widthWindow =  document.documentElement.clientWidth;
@@ -70,12 +66,18 @@ if (menuLink.length > 0) {
 
 
 //запускаем анимацию по клику
+
 const htmlAnim = document.querySelector(".skills__html-pol");
 const cssAnim = document.querySelector(".skills__css-pol");
 const jsAnim = document.querySelector(".skills__js-pol");
 const reactlAnim = document.querySelector(".skills__react-pol");
-const startAnim = document.querySelector(".skills__tittle")
+const startAnim = document.querySelector(".skills__click")
+const skillsPic =  document.querySelector(".skills__picture")
+skillsPic.style.display = "none";
+// if(widthWindow > 640){
 startAnim.addEventListener('click', function () {
+    startAnim.style.display = 'none';
+    skillsPic.style.display = "block";
     htmlAnim.classList.remove('skills__html-pol');
     htmlAnim.classList.add('skills__html-pol_act');
     cssAnim.classList.remove('skills__css-pol');
@@ -87,14 +89,5 @@ startAnim.addEventListener('click', function () {
 
 });
 
-//появление подсказки при кликеХ
 
-
-// windowAsq.addEventListener ('click', function(){
-//     windowBlock.style.display = 'block';
-// });
-
-// document.addEventListener('click', function(){
-//     windowBlock.style.display = 'none';
-// });
 

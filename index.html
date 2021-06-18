@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>ResumeKondakov</title>
 </head>
 
 <body>
@@ -56,40 +58,34 @@
                     <h1>Frontend-разработчик</h1>
                 </div>
                 <div class="name-job__item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, minima nisi veritatis
-                        voluptatem consequatur quibusdam! Omnis rerum et corporis natus provident culpa officia odit
-                        nemo excepturi, facere optio harum saepe esse similique quaerat blanditiis repellendus aperiam
-                        alias!</p>
+                    <p>Добрый день! Меня зовут Кондаков Александр, мне 18 лет и я Junior Frontend-разработчик/Верстальщик. С моими скилами и образованием можно ознакомиться ниже.</p>
                 </div>
                 <button class="name-job__button">
-                    <a href="#" class="name-job__link"> Написать мне</a>
+                    <a href="#sendme" class="name-job__link"> Написать мне</a>
                 </button>
             </div>
         </section>
     </header>
     <section id="aboutme" class="about-me">
         <h2 class='about-me__tittle'>Обо мне</h2>
-        <p class="about-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis id
-            architecto libero debitis, facere ex dolor aliquam veritatis, quae fuga? Inventore, sit distinctio? Possimus
-            exercitationem, harum neque quaerat magni blanditiis iste nihil obcaecati delectus? Libero ratione pariatur
-            voluptates numquam, nemo exercitationem adipisci placeat minima sapiente cumque saepe! Ipsam, numquam?</p>
+        <p class="about-me__text">У меня незаконченное среднее специальное образование по специальности:"Наладчик аппаратного и программного обспечения". На данный момент я верстаю сайты с помощью HTML, CSS, JS. Изучаю React/Redux. Знакомился с MySQL. Обучался всему вышеперечисленному по книгам, статьям, курсам и постоянной практике. Планирую развиваться в сторону Fulstack-разработчика. </p>
         <!-- <img src="/img/WD.png" alt="dw" class="about-me__img"> -->
     </section>
     <section class="skills">
 
         <div class="skills__logo">
-            <img class="skills__img" src="img/css3-01_icon-icons.com_50918.png" alt="#" class="skills__img">
-            <img class="skills__img" src="img/social_html5_html_71(1).png" alt="#" class="skills__img">
-            <img class="skills__img" src="img/prog-js01_icon-icons.com_50789.png" alt="#" class="skills__img">
-            <img class="skills__img" src="img/react_logo_icon_144942.png" alt="#" class="skills__img">
-            <img class="skills__img" src="img/github_original_wordmark_logo_icon_146506.png" alt="#"
-                class="skills__img">
+            <img class="skills__img" src="img/css3-01_icon-icons.com_50918.png" alt="#" >
+            <img class="skills__img" src="img/social_html5_html_71(1).png" alt="#" >
+            <img class="skills__img" src="img/prog-js01_icon-icons.com_50789.png" alt="#" >
+            <img class="skills__img" src="img/react_logo_icon_144942.png" alt="#" >
+            <img class="skills__img" src="img/github_original_wordmark_logo_icon_146506.png" alt="#">
         </div>
         <div id="skills" class="skills__list-img">
             <div class="skills__list">
                 <h2 class="skills__tittle">
                     Мои Навыки
                 </h2>
+                
                 <div class="skills__sublist">
 
                     <h5 class="skills__list-tittle">HTML</h5>
@@ -130,13 +126,13 @@
                     </div>
                 </div>
             </div>
-            <img src="img/me1.png" alt="я мультяшка:)" class="skills__picture">
+            <img src="img/me1.png" alt="я мультяшка:)" tittle=")" class="skills__picture">
+            <img src="img/i.png" alt="Тыкни)" title="Кликни)" class="skills__click">
         </div>
     </section>
     <section id="sendme" class="send-me">
         <h2 class="send-me__tittle">Хотите веб-сайт?</h2>
-        <p class="send-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et quia quibusdam
-            recusandae vero fuga odit veniam itaque quidem culpa!</p>
+        <p class="send-me__text">Заполните форму с Вашим вопросом/пожеланием/заказом и нажмите кнопочку:) Я отвечу в самое ближайшее время!</p>
         <form class="send-me__form" action="">
             <input type="name" placeholder="Ваше имя" required class="send-me__name">
             <input type="email" placeholder="Ваш e-mail" required class="send-me__email">
@@ -147,16 +143,16 @@
     </section>
     <footer id="footer" class="footer">
         <div class="footer__block">
-            <div>
+            <div >
                 <h3 class="footer__name">Кондаков Александр</h3>
                 <h6 class="footer__war">(с) 2021. Все права защищены.</h6>
             </div>
             <div class="footer__links">
-                <a href="" class="footer__link"><img src="img/github_logo_icon_147285.png" alt="GitHub"
+                <a href="https://github.com/AlexWhite272" target="_blank" class="footer__link"><img src="img/github_logo_icon_147285.png" alt="GitHub"
                         class="footer__img"></a>
-                <a href="" class="footer__link"><img src="img/social_media_logo_whatsapp_icon-icons.com_59066.png"
+                <a href="https://wa.me/79030010775" target="_blank" class="footer__link"><img src="img/social_media_logo_whatsapp_icon-icons.com_59066.png"
                         alt="WhatsApp" class="footer__img"></a>
-                <a href="" class="footer__link"><img
+                <a href="https://t.me/AlexWhite272" target="_blank" class="footer__link"><img
                         src="img/logo_telegram_airplane_air_plane_paper_airplane_icon_143169.png" alt="Telegram"
                         class="footer__img"></a>
             </div>
