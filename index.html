@@ -13,6 +13,13 @@
 </head>
 
 <body>
+    <!--<script type="php">
+        echo date('l, F jS, Y');
+    </script>
+      <?php include ("databaseconnect.php");?>  -->
+    <?php
+	    include "databaseconnect.php"
+    ?> 
     <header>
         <script type="text/javascript">
             $(document).ready(function(){
@@ -133,9 +140,9 @@
     <section id="sendme" class="send-me">
         <h2 class="send-me__tittle">Хотите веб-сайт?</h2>
         <p class="send-me__text">Заполните форму с Вашим вопросом/пожеланием/заказом и нажмите кнопочку:) Я отвечу в самое ближайшее время!</p>
-        <form class="send-me__form" action="">
-            <input type="name" placeholder="Ваше имя" required class="send-me__name">
-            <input type="email" placeholder="Ваш e-mail" required class="send-me__email">
+        <form class="send-me__form" method="POST" action="">
+            <input type="name" name="name" placeholder="Ваше имя" required class="send-me__name">
+            <input type="email" name="email" placeholder="Ваш e-mail" required class="send-me__email">
             <textarea name="text" placeholder="Ваши вопросы, ТЗ..." required id="" cols="30" rows="10"
                 class="send-me__textarea"></textarea>
             <button class="send-me__button" type="submit">Отправить</button>
